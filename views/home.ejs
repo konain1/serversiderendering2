@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>server side rendering 2</h1>
+    <form action="/url" method="POST">
+        <input name="url" type="text" placeholder="url">
+        <br>
+        <button type="submit">Generate</button>
+    </form>
+    <% urldata.forEach(element => { %>
+    <h1><%= element.orignalurl  %></h1>
+    <% }) %>
+</body>
+</html>
